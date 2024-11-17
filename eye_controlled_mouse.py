@@ -6,11 +6,16 @@ from scipy.spatial import distance as dist
 import time
 
 # Constants
-EYE_AR_THRESH = 0.25  # Threshold for blink detection
-EYE_AR_CONSEC_FRAMES = 3  # Consecutive frames for detecting a blink
-RIGHT_CLICK_TIME_THRESHOLD = 2  # Time in seconds for detecting right-click
-FRAME_SKIP = 5  # Skip every 5th frame for face detection
-SCREEN_EDGE_RATIO = 0.2  # Ratio to determine screen edge
+# Threshold for blink detection
+EYE_AR_THRESH = 0.25
+# Consecutive frames for detecting a blink
+EYE_AR_CONSEC_FRAMES = 3
+# Time in seconds for detecting right-click
+RIGHT_CLICK_TIME_THRESHOLD = 2
+# Skip every 5th frame for face detection
+FRAME_SKIP = 5
+# Ratio to determine screen edge
+SCREEN_EDGE_RATIO = 0.2
 
 # Initialize dlib's face detector and facial landmarks predictor
 detector = dlib.get_frontal_face_detector()
